@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 TOKEN = os.getenv('8059161110:AAFDAylNrZ1RAv9SH2Eqdjiquwg4fUl4mKo')
-bot = telebot.TeleBot(TOKEN)
+bot = telebot.TeleBot(8059161110:AAFDAylNrZ1RAv9SH2Eqdjiquwg4fUl4mKo)
 
 ORDERS = {}
 NOTES = {
