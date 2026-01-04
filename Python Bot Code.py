@@ -27,7 +27,7 @@ def start(message):
     markup.add(types.InlineKeyboardButton("📚 Browse Materials", callback_data="buy"))
     markup.add(types.InlineKeyboardButton("❓ Help", callback_data="help"))
     
-    bot.send_message(user_id, "🎓 Welcome to STUDY_NEST_NOTES_HUB!\n\nPremium study materials for exam preparation\n\n⚡ Quick UPI payment + Instant PDF delivery!", reply_markup=markup)
+    bot.send_message(user_id, "🎓 Welcome to @STUDY_NEST_NOTES_HUB_BOT!\n\nPremium study materials for exam preparation\n\n⚡ Quick UPI payment + Instant PDF delivery!", reply_markup=markup)
 
 @bot.callback_query_handler(func=lambda call: call.data == "buy")
 def show_materials(call):
@@ -48,7 +48,7 @@ def help_section(call):
 4️⃣ Send receipt screenshot
 5️⃣ Get PDF instantly!
 
-📧 Contact: @STUDY_NEST_NOTES_HUB_BOT
+📧 Contact: @studynestowner
     """
     bot.send_message(call.message.chat.id, msg)
 
